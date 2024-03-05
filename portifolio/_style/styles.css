@@ -1,0 +1,364 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#222;
+    color: #fff;
+}
+
+/* barra de menu */
+ul,
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background-color: #222; /* Altere para a cor desejada */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+/* messagem */
+.header {
+    display: flex;
+    align-items: center;
+}
+.tool{
+    display: inline;
+    margin-right: 20px;
+}
+
+p {
+    padding: 1px;
+    margin: 0;
+}
+
+.header-messagem-container {
+    padding: 32px;
+}
+
+/* Estilo para o título */
+h1 {
+    padding: 5px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.name-span {
+    border-bottom: 4px solid #ffd700;
+}
+
+/* Estilo para a biografia */
+.biografia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-biografia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.conteudo-biografia img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 300px;
+    margin-right: 20px;
+}
+
+.texto-bio {
+    text-align: justify;
+    color: #ccc;
+    width: 100%;
+}
+
+.biografia h3 {
+    text-align: center;
+    color: #ffd700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Media Query para ajustes responsivos */
+@media (max-width: 48rem) {
+    .conteudo-biografia {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .conteudo-biografia img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Projetos */
+
+.projects-wrapper {
+    margin-top: 42px;
+}
+
+.project-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.project-title {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+    margin-bottom: 0;
+}
+
+.project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.project {
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: #ffd700;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.project-tools {
+    color: rgba(217, 217, 217, 1);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2.29px;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffd700;
+    text-transform: uppercase;
+}
+
+/* Habilidades */
+.habilidades-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 70rem;
+    padding: 20px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    margin: 5rem auto 2rem;
+}
+
+.tempo-habilidades {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.titulo-habilidades {
+    text-align: center;
+    color: #ffd700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.article-container article {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.article-container h2 {
+    color: #ffd700;
+    margin: 0;
+    font-size: 20px;
+}
+
+.article-container p {
+    color: #ccc;
+    margin: 10px 0;
+    padding: 16px;
+}
+
+/* Rodapé */
+.footer {
+   
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px ;
+    text-align: center;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.redes-sociais {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociais li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociais a {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Estilos para o formulário */
+.form {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.formulario textarea {
+    height: 150px;
+}
+
+.formulario input[type="file"] {
+    margin-top: 10px;
+}
+
+.formulario button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd700;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #ffeb3b;
+}
+
+/* Estilos para o botão "Escolher arquivo" */
+.formulario input[type="file"] {
+    margin-top: 10px;
+    display: none;
+}
+
+/* Estilo para o rótulo personalizado do botão "Escolher arquivo" */
+.custom-file-upload {
+    margin: 10px 0;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #ffeb3b;
+}
+
+/* Media Query para ajustes responsivos */
+@media (max-width: 1020px) {
+    .project {
+        width: 100%;
+    }
+
+    .article-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
